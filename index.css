@@ -1,0 +1,156 @@
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #layout {
+  height: 100%;
+}
+
+body {}
+
+header {
+  padding: 30px;
+  border-bottom: 1px solid #000;
+}
+
+main {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 60, 75);
+}
+
+#layout {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  /* flex-direction: column; */
+  row-gap: 1rem;
+}
+
+table {
+  /* width: 12.5%; */
+  height: 12.5%;
+  border-collapse: collapse;
+  border: 1px solid rgb(0, 0, 0);
+  font-family: sans-serif;
+  /* font-size: 0.8rem; */
+  letter-spacing: 1px;
+}
+  
+table.disabled textarea {
+  color: #999;
+  background-color: #ddd;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+th,
+td {
+  /* padding: 0.25rem; */
+  border: 1px solid rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+tr {}
+
+td {
+  line-height: 0;
+  width: 8rem;
+  height: 8rem;
+  text-align: center;
+}
+
+td textarea {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  overflow: hidden;
+  text-align: center;
+  line-height: 8rem;  
+  width: 8rem;
+  height: 8rem;
+}
+
+.textarea-1, .textarea-final.first::placeholder {
+  font-weight: 700;
+  color: rgb(255, 0, 0);
+}
+
+.textarea-2, .textarea-final.second::placeholder {
+  font-weight: 700;
+  color: rgb(255, 174, 0);
+}
+
+.textarea-3, .textarea-final.third::placeholder {
+  font-weight: 700;
+  color: rgb(0, 255, 170);
+}
+
+.textarea-4, .textarea-final.fourth::placeholder {
+  font-weight: 700;
+  color: rgb(0, 136, 255);
+}
+
+.textarea-5, .textarea-final.fifth::placeholder {
+  font-weight: 700;
+  color: rgb(44, 60, 75);
+}
+
+.textarea-6, .textarea-final.sixth::placeholder {
+  font-weight: 700;
+  color: rgb(234, 0, 255);
+}
+
+.textarea-7, .textarea-final.seventh::placeholder {
+  font-weight: 700;
+  color: rgb(255, 0, 76);
+}
+
+.textarea-8, .textarea-final.eighth::placeholder {
+  font-weight: 700;
+  color: rgb(123, 255, 0);
+}
+
+.textarea-final.final::placeholder {
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+footer {
+  border-top: 1px solid #000;
+}
+
+footer li {
+  text-align: right;
+  margin: 30px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  list-style: none;
+}
+
+footer li:last-child {
+  margin-top: 0;  
+  margin-bottom: 30px;  
+}
+
+footer li:last-child button {
+  border: 0;
+  cursor: pointer;
+  padding-top: 0;
+}
